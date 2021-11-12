@@ -28,7 +28,7 @@
 </head>
 <body id="top-page">
 
-<div class="loading-wrap">
+<div class="loading-wrap" style="display: flex;">
   <div class="loading loading06">
     <span data-text="声">声</span>
     <span data-text="で">で</span>
@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper" style="display:none">
   <header class="header">         
     <div class="header-top">   
       <div class="header-top-wrapper">
@@ -651,8 +651,6 @@
     return new Promise(resolve => (setTimeout(resolve, ms)));
   }
   $(document).ready(async function () {
-    $(".loading-wrap").css("display" , "flex");
-    $(".wrapper").css("display" , "none");
     await sleep(2000);
     $(".loading-wrap").css("display" , "none");
     $(".wrapper").css("display" , "block");
