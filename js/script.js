@@ -40,6 +40,7 @@ $(document).ready(async function () {
     })
 
     // Audio Volumn
+    // $('#volume').draggable();
     $("#volume").slider({
         min: 0,
         max: 100,
@@ -49,6 +50,7 @@ $(document).ready(async function () {
           setVolume(ui.value / 100);
         }
     });  
+    
 
     var myaudio = new Audio(); 
       
